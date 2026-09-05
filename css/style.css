@@ -1,0 +1,261 @@
+/* GLOBAL CORE STYLES */
+:root {
+    --primary-color: #0d233a;
+    --secondary-color: #ff6b00;
+    --light-bg: #f8fafc;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #334155;
+    background-color: #ffffff;
+}
+
+/* BRANDING & NAVBAR FIXES */
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.15rem; /* Reduced slightly to fit longer text */
+    color: var(--primary-color) !important;
+    white-space: normal; /* Allows smooth wrapping on very small screens if needed */
+    max-width: 260px; /* Keeps brand title contained */
+    line-height: 1.2;
+}
+
+/* Adjust navbar padding and link spacing */
+.navbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 0.9rem; /* Sized down slightly so all 10 links fit on one row */
+    color: #475569 !important;
+    padding-left: 0.4rem !important;
+    padding-right: 0.4rem !important;
+    transition: color 0.2s ease-in-out;
+}
+
+    .nav-link:hover, .nav-link.active {
+        color: var(--secondary-color) !important;
+    }
+
+/* RESPONSIVE MEDIA QUERIES FOR LARGE SCREENS */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .navbar-brand {
+        font-size: 1rem;
+        max-width: 210px;
+    }
+
+    .nav-link {
+        font-size: 0.82rem;
+        padding-left: 0.25rem !important;
+        padding-right: 0.25rem !important;
+    }
+}
+
+/* HERO CAROUSEL STYLES */
+.hero-carousel {
+    position: relative;
+    min-height: 550px;
+}
+
+    .hero-carousel .carousel-item {
+        height: 550px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+/* SLIDE BACKGROUND IMAGES WITH OVERLAYS */
+.hero-slide-1 {
+    background: linear-gradient(rgba(13, 35, 58, 0.75), rgba(13, 35, 58, 0.75)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80');
+}
+
+.hero-slide-2 {
+    background: linear-gradient(rgba(13, 35, 58, 0.75), rgba(13, 35, 58, 0.75)), url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1600&q=80');
+}
+
+.hero-slide-3 {
+    background: linear-gradient(rgba(13, 35, 58, 0.75), rgba(13, 35, 58, 0.75)), url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1600&q=80');
+}
+
+/* CAROUSEL BUTTON ACCENTS */
+.carousel-indicators [data-bs-target] {
+    background-color: var(--secondary-color);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/* CARDS & ACCENTS */
+.card {
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+    }
+
+.bg-primary-custom {
+    background-color: var(--primary-color) !important;
+}
+
+.text-accent {
+    color: var(--secondary-color) !important;
+}
+
+.btn-accent {
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+}
+
+    .btn-accent:hover {
+        background-color: #e05e00;
+        color: #fff;
+    }
+
+/* FOOTER */
+footer {
+    background-color: var(--primary-color);
+    color: #94a3b8;
+}
+
+    footer a {
+        color: #cbd5e1;
+        text-decoration: none;
+    }
+
+        footer a:hover {
+            color: var(--secondary-color);
+        }
+
+
+/* BRAND LOGO IMAGE FIX */
+.brand-logo {
+    height: 40px; /* Controls logo height */
+    width: auto; /* Maintains original aspect ratio */
+    object-fit: contain;
+}
+
+/* Ensure branding text aligns vertically with the image */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+
+                                                                    /*  For 2nd & 3rd HTML home  */
+
+/* SHARED COMPACT STYLES */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.brand-logo {
+    height: 38px;
+    width: auto;
+    object-fit: contain;
+}
+
+.max-w-800 {
+    max-width: 800px;
+}
+
+/* CAROUSEL FIXED HEIGHT */
+.hero-carousel {
+    min-height: 480px;
+}
+
+    .hero-carousel .carousel-item {
+        height: 480px;
+        background-size: cover;
+        background-position: center;
+    }
+
+.hero-slide-1 {
+    background: linear-gradient(rgba(10, 25, 47, 0.75), rgba(10, 25, 47, 0.75)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80');
+}
+
+.hero-slide-2 {
+    background: linear-gradient(rgba(10, 25, 47, 0.75), rgba(10, 25, 47, 0.75)), url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1600&q=80');
+}
+
+/* THEME OPTION 1: NAVY & AMBER */
+.bg-navy {
+    background-color: #0B192C !important;
+}
+
+.text-navy {
+    color: #0B192C !important;
+}
+
+.text-amber {
+    color: #FF9F66 !important;
+}
+
+.bg-amber {
+    background-color: #FF9F66 !important;
+}
+
+.btn-theme-opt1 {
+    background-color: #FF9F66;
+    border-color: #FF9F66;
+    color: #0B192C;
+}
+
+    .btn-theme-opt1:hover {
+        background-color: #E8824A;
+        border-color: #E8824A;
+        color: #ffffff;
+    }
+
+.border-top-theme {
+    border-top: 4px solid #FF9F66 !important;
+}
+
+.border-start-theme {
+    border-left: 4px solid #FF9F66 !important;
+}
+
+/* THEME OPTION 2: SLATE & ROYAL BLUE */
+.bg-slate {
+    background-color: #1E293B !important;
+}
+
+.bg-slate-subtle {
+    background-color: #F1F5F9 !important;
+}
+
+.text-slate {
+    color: #1E293B !important;
+}
+
+.bg-royal-blue {
+    background-color: #2563EB !important;
+}
+
+.text-royal-blue {
+    color: #2563EB !important;
+}
+
+.text-royal-blue-light {
+    color: #60A5FA !important;
+}
+
+.btn-theme-opt2 {
+    background-color: #2563EB;
+    border-color: #2563EB;
+}
+
+    .btn-theme-opt2:hover {
+        background-color: #1D4ED8;
+        border-color: #1D4ED8;
+    }
